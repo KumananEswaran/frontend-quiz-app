@@ -1,4 +1,4 @@
-# Interactive Rating Component: <a target="_blank" href="https://fm-quiz-app.netlify.app/">Visit Here</a>
+# Interactive Frontend Quiz App: <a target="_blank" href="https://fm-quiz-app.netlify.app/">Visit Here</a>
  
 <a href="https://fm-quiz-app.netlify.app/" target="_blank">
  
