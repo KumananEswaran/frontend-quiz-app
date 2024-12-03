@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="mode">
+			<img src="/images/icon-sun-dark.svg" alt="" />
+			<label class="switch">
+				<input type="checkbox" />
+				<span class="slider round"></span>
+			</label>
+			<img src="/images/icon-moon-dark.svg" alt="" />
+		</div>
+
+		<div class="container">
+			<div class="section">
+				<div class="welcome">
+					<h2>Welcome to the</h2>
+					<h2>Frontend Quiz!</h2>
+					<p>Pick a subject to get started.</p>
+				</div>
+				<div class="subjects">
+					<button><img src="/images/icon-html.svg" alt="" />HTML</button>
+					<button><img src="/images/icon-css.svg" alt="" />CSS</button>
+					<button><img src="/images/icon-js.svg" alt="" />Javascript</button>
+					<button class="accessibility-btn">
+						<img src="/images/icon-accessibility.svg" alt="" />Accessibility
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-question hide">
+			<div class="category">
+				<img src="/images/icon-accessibility.svg" alt="" />
+				<h2>Accessibility</h2>
+			</div>
+			<div class="section-question">
+				<div class="question">
+					<p>Question 1 out of 10</p>
+					<h2>
+						Which of these color contrast ratios defines the minimum WCAG 2.1
+						Level AA requirement for normal text?
+					</h2>
+				</div>
+				<div class="answers" id="answer-buttons">
+					<button><span>A</span>4.5:1</button>
+					<button><span>B</span>3:1</button>
+					<button><span>C</span>2.5:1</button>
+					<button><span>D</span>5:1</button>
+					<button id="submit-answer">Submit Answer</button>
+					<button id="next-question">Next Question</button>
+					<div class="warning-message">
+						<img src="/images/icon-incorrect.svg" alt="" />
+						<p>Please select an answer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-end hide">
+			<div class="category-end">
+				<img src="/images/icon-accessibility.svg" alt="" />
+				<h2>Accessibility</h2>
+			</div>
+			<div class="section-end">
+				<div class="end">
+					<h2>Quiz completed</h2>
+					<h2>You scored...</h2>
+				</div>
+				<div class="score-card">
+					<div class="score">
+						<div class="score-category">
+							<img src="/images/icon-accessibility.svg" alt="" />
+							<h2>Accessibility</h2>
+						</div>
+						<div class="score-result">
+							<h2>8</h2>
+							<p>out of 10</p>
+						</div>
+					</div>
+					<div>
+						<button class="play-again" id="play-again">Play Again</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="/script.js"></script>
+	</body>
+</html>
